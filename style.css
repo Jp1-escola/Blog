@@ -1,0 +1,141 @@
+/* Importando fontes do Google: uma pixelada para títulos e uma redondinha para leitura */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@500;700&display=swap');
+
+/* Variáveis de cor inspiradas no Stardew Valley */
+:root {
+    --cor-madeira-escura: #4a2d18;
+    --cor-madeira-clara: #8a5a36;
+    --cor-pergaminho: #fcf3db;
+    --cor-pergaminho-claro: #fffbef;
+    --cor-grama: #5c8d37;
+    --cor-texto: #311e11;
+    --cor-link: #b15217;
+}
+
+/* Configuração do fundo (Grama) */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--cor-grama);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Caixa principal do Blog (Menu de Madeira/Pergaminho) */
+.container-blog {
+    max-width: 800px;
+    width: 100%;
+    background-color: var(--cor-pergaminho);
+    border: 6px solid var(--cor-madeira-escura);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos com estilo Pixel Art */
+h1, h2, h3 {
+    font-family: 'Press Start 2P', monospace;
+    color: var(--cor-madeira-escura);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+header p {
+    text-align: center;
+    font-style: italic;
+    color: var(--cor-madeira-clara);
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Menu de Navegação em formato de botões de pixel */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    display: inline-block;
+    background-color: var(--cor-madeira-clara);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.65rem;
+    border-bottom: 4px solid var(--cor-madeira-escura);
+    border-radius: 6px;
+    transition: all 0.1s ease;
+}
+
+nav a:hover {
+    background-color: var(--cor-madeira-escura);
+    transform: translateY(2px);
+    border-bottom-width: 2px;
+}
+
+/* Divisórias charmosas */
+hr {
+    border: none;
+    border-top: 4px dashed var(--cor-madeira-clara);
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-top: 40px;
+    border-left: 5px solid var(--cor-madeira-clara);
+    padding-left: 10px;
+}
+
+/* Estilização dos Cards de Postagens */
+article {
+    background-color: var(--cor-pergaminho-claro);
+    border: 3px solid var(--cor-madeira-clara);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.05);
+}
+
+article h3 {
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+article a {
+    color: var(--cor-link);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Listas de itens/personagens */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--cor-madeira-clara);
+    margin-top: 40px;
+}
